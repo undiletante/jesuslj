@@ -1,4 +1,4 @@
-# React JS (ñ)
+# React JS (ñs)
 
 
 # Indicaciones
