@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: "Montserrat", Helvetica, sans-serif;
+}
+/* ############################   CABECERA   ############################ */
+header, header a {
+    color: #fff;
+    text-decoration: none;
+}
+header {
+    height: 100%;
+    overflow: hidden;
+    height: 554px;
+    min-height: 554px;
+    max-height: 554px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+/* #### BARRA SUPERIOR ####*/
+header .barra_superior, header .barra_inferior {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+div.barra_superior > div {
+    flex-grow: 1;
+    text-align: center;
+}
+div.barra_superior div.logo {
+    flex-grow: 4;
+}
+div.barra_superior div.logo img {
+    width: 150px;
+}
+div.barra_superior div.whatsapp img,
+div.barra_superior div.carrito.cabecera img {
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+}
+div.barra_superior div.whatsapp,
+div.barra_superior div.carrito.cabecera {
+    text-align: left;
+    font-weight: bold;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+/* #### BARRA INFERIOR ####*/
+div.barra_inferior {
+    align-items: flex-start;
+    background-color: #ffc934;
+    padding: 10px;
+}
+
+/* Categorías */
+div.barra_inferior div.categorias {
+    flex-grow: 1;
+}
+div.barra_inferior div.categorias div.titulo {
+    background-color: #272727;
+    padding: 12px;
+    font-weight: bold;
+}
+div.barra_inferior div.categorias ul {
+    display: none;
+    list-style: none;    
+    background-color: #272727;
+    position: absolute;
+}
+div.barra_inferior div.categorias ul.mostrar {
+    display: block;
+}
+div.barra_inferior div.categorias ul li {
+    padding: 10px 30px;
+}
+
+/* Buscar */
+div.barra_inferior div.buscar {
+    flex-grow: 3;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #fff;
+}
+div.barra_inferior div.buscar input {
+    flex-grow: 2;
+    line-height: 3.4em;
+}
+div.barra_inferior div.buscar button {
+    background-color: #272727;
+    border-radius: 10px;
+    color: #fff;
+    padding: 0 10px;
+    line-height: 3em;
+    font-weight: bold;
+}
+
+/* Slider */
+div#slider-img {
+    width: 100%;
+    position: absolute;
+    z-index: -10;
+}
+div#slider-img div.slide  {
+    width: 100%;
+    display: none;
+}
+div#slider-img div.slide.mostrar {
+    display: block;
+}
+div#slider-img div.slide img { 
+    width: 100%;
+}
+
+
+div#slider-texto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    position: relative;
+}
+div#slider-texto div.slide-texto {
+    display: none;
+    text-align: center;
+}
+div#slider-texto .slide-texto.mostrar {
+    display: block;
+}
+div#slider-texto .slide-texto h3  {
+    font-size:40px;
+    font-weight: 700;
+    color: #ffc600;
+    margin: 60px auto 40px;
+    text-align: center;
+}
+div#slider-texto .slide-texto  p  {
+    font-size: 28px;
+    line-height: 30px;
+    color: white;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+div#slider-texto button  {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    background: #4d6b2c;
+    padding: 13px 42px;
+    width: auto;
+    vertical-align: top;
+    margin-bottom: 50px;
+}
+
+div#slider-texto .slider-boton  {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    background: #4d6b2c;
+    padding: 13px 42px;
+    width: auto;
+    vertical-align: top;
+    margin-bottom: 50px;
+    position:absolute;
+    padding: 5px 10px;
+    top: 50%;
+    display: inline-block;
+}
+div#slider-texto div.slider-boton:hover {
+    color: black;
+    background-color: white;
+}
+div#slider-texto #slider-boton-izquierda  {
+    left:0;    
+}
+div#slider-texto #slider-boton-derecha  {
+    right:0;
+}
+
+/* ############################   FOOTER   ############################ */
+footer {
+    background-color: #272727;
+    color: #fff;
+    padding: 30px;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+footer h3 {
+    color: #fff;
+}
+footer .secciones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 0 20px;
+}
+footer .seccion {
+    width: 21%;    
+    padding: 10px 15px;
+    line-height: 1.5em;
+}
+footer .seccion h3 {
+    margin-bottom: 20px;
+}
+footer .seccion.social ul {
+    list-style-type: none;
+}
+footer .seccion.menu ul {
+    list-style-type: none;
+}
+footer .seccion.social img {
+    width: 20px;
+    position: relative;
+    top: 5px;
+}
+footer .seccion a:hover {
+    color: #272727;
+}
+footer p.derechos {
+    text-align: center;
+    background-color: #272727;
+    color: white;
+    padding: 5px;
+    border-top: 0.01em solid darkgray;
+    padding: 15px;
+}
+
+/* ############################   CARRITO   ############################ */
+#lista-carrito {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #151719;
+    right: -300px;
+    transition: all 500ms linear;
+    z-index: 10;
+}
+  
+#lista-carrito.activo {
+    right: 0px;
+}
+
+#lista-carrito h3 {
+    color: white;
+    margin: 40px 10px 30px;
+}
+
+#lista-carrito ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 0 5px 0 10px;
+}
+
+#lista-carrito ul li {
+    color: rgba(230, 230, 230, .9);
+    list-style: none;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(100, 100, 100, .3);
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+#lista-carrito ul li img {
+    width: 80px;
+}
+
+#lista-carrito ul li .detalles {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: end;
+    flex-grow: 4;
+    gap: 10px;
+}
+
+#lista-carrito ul li .detalles button {  
+    padding: 5px 10px;
+    text-align: center;
+    margin-right: 10px;
+    font-weight: bolder;
+}
+
+#lista-carrito ul li .detalles input.cantidad {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+}
+
+#lista-carrito div.total {
+    display: block;    
+    text-align: right;
+    font-weight: bolder;
+    color: white;
+    padding: 15px 10px;
+}
+
+#lista-carrito .cerrar {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    cursor: pointer;
+}
+  
+#lista-carrito .cerrar span {
+    display: block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    border: 3px solid #fff;
+    color: white;
+}
+
+
+
+/* ############################   CONTENIDO   ############################ */
+main {
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

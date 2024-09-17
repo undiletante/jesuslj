@@ -1,0 +1,169 @@
+/* ############################   ICONOS   ############################ */
+section.iconos {
+    margin: 30px auto 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 80%;
+    gap: 100px;
+}
+
+section.iconos .icono {
+    text-align: center;
+}
+
+section.iconos .icono img {
+    width: 150px;
+} 
+
+section.iconos .icono h3 {
+    color: #111;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    position: relative;
+    text-align: center;
+}
+
+section.iconos .icono p {
+    color: #666;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+}
+
+/* ###########################   PRODUCTOS  ########################## */
+section.productos {
+    width: 70%;
+    margin: 30px auto;
+}
+
+section.productos h2 {
+    text-align: center;
+    margin: 60px auto;
+}
+section.productos div.productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+section.productos div.productos .producto {
+    width: 20%;
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+section.productos div.productos .producto figcaption {
+    text-align: center;
+}
+section.productos div.productos .producto a {
+    text-decoration: none;
+}
+section.productos div.productos .producto h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+section.productos div.productos .producto h3 a {
+    font-weight: 500;
+    font-size: 18px;    
+    text-decoration: none;
+    text-transform: capitalize;
+    white-space: nowrap;
+    color: #666;
+
+}
+section.productos div.productos .producto .imagen {
+    background-color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+section.productos div.productos .producto img {
+    width: 100%;
+}
+section.productos div.productos .producto .precio {
+    text-align: center;
+    margin-bottom: 15px;
+}
+section.productos div.productos .producto .precio a {
+    color: #222;
+    font-weight: 700;
+    font-size: 18px; 
+}
+section.productos div.productos .producto button {
+    text-align: center;
+    background-color: #171717;
+    border-radius: 10px;
+    color: #fff;
+    padding: 0 10px;
+    line-height: 3em;
+    font-weight: bold;
+}
+section.productos div.productos .producto button:hover {
+    background-color: #ffc934;
+}
+
+/* ############################   PROMOS   ############################ */
+
+section.promos {
+    width: 70%;
+    margin: 30px auto;
+}
+
+section.promos .banners {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+
+section.promos .banners img {
+    width: 100%;
+}
+
+section.promos .banners p {
+    text-align: center;
+    font-weight: bolder;
+}
+
+section.promos .banners > div:hover {
+    transform: scale(1.1);
+} 
+
+section.promos .banners .banner1 {
+    grid-column: span 2 / span 2;
+    grid-row: span 5 / span 5;
+    background-color: #ffc934;
+    height: 256px;
+    overflow: hidden;
+}
+
+section.promos .banners .banner2 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 3;
+    background-color: #ffc934;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.promos .banners .banner3 {
+    grid-row: span 4 / span 4;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    background-color: #ffc934;
+    height: 203px;
+}
+
+section.promos .banners .banner4 {
+    grid-row: span 4 / span 4;
+    grid-column-start: 4;
+    grid-row-start: 2;
+    background-color: #ffc934;
+    height: 203px;
+}
