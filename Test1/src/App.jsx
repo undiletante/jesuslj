@@ -3,7 +3,7 @@ import { TwitterFollowCard } from './TwitterFollowCard';
 
 export function App() {
     const undiletante = { 
-        isFollowing: true, 
+        initialIsFollowing: true, 
         userName:'@undiletante', 
         name: 'Jesús Antonio López Juscamaita'
     }
@@ -13,7 +13,7 @@ export function App() {
             <TwitterFollowCard 
                 name = "Midu"
                 userName = "@midudev" 
-                isFollowing={false}
+                initialIsFollowing={false}
             />
             <TwitterFollowCard {...undiletante}/>
             <TwitterFollowCard 
@@ -22,7 +22,7 @@ export function App() {
             />
             <TwitterFollowCard 
                 name = "Vanderhart"
-                isFollowing
+                initialIsFollowing
             />
         </section>        
     );
