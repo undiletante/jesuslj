@@ -3,6 +3,10 @@
 
 # Indicaciones
 
+## Creando mononrepositorio multipaquete
+- En la raiz de todos los proyectos: npm init -y
+- Crear carpeta de proyectos 
+
 ## Creando app con react: HelloWorld
 - En el terminal digitamos: "npm create vite@latest" para crear apps con react.
 Confirmar digitando: "y" y luego pulsar enter
